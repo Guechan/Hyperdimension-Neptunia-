@@ -6,6 +6,7 @@ One Nep guide about Nep world
 the control of Missions are there
 added pudding 
 added header
+added New Nepedia CPUs
 ## Blanc new Icons
 :package: new game 
 :beatle: Monster Extermination
