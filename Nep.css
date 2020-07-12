@@ -91,7 +91,8 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation:zoo  25s ;
+    overflow: hidden;
+    animation: zoom  25s ;
    
 }
 
