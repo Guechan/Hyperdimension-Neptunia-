@@ -44,7 +44,7 @@ list-style: none ;
     transition:transform 1s;
 }
 
-.pudding span{
+.pudding-span{
     position: absolute;
     left: 3rem;
     height: 2rem;
@@ -59,7 +59,7 @@ list-style: none ;
     opacity: 0;
 
 }
-.pudding span::before{
+.pudding-span:before{
      content: "";
      position: absolute;
      border-right: .5rem solid #a044ff;
@@ -92,7 +92,7 @@ header {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    animation: zoom  25s ;
+    animation: zoom  10s ;
    
 }
 
@@ -291,6 +291,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-top: outset;
 
     }
 
@@ -345,14 +346,14 @@ header {
     height: 2rem;
 }
 .sessao-story{
-    background-color: rgb(153, 182, 197);
+    background-color:  rgb(61, 109, 172);
 
 }
 
 .story{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(153, 182, 197);
+    background-color:  rgb(61, 109, 172);
 }
 
 .card {
@@ -375,6 +376,7 @@ background-color: seashell;
     border-radius: .5rem;
     opacity: 1;
     transition: opacity 2s;
+    justify-content: left;
 }
 .card-info {
     opacity: 0;
@@ -417,17 +419,20 @@ transition: all 2s;
 
 
 }
-
-.card-info button{
+.btn {
     font-family: var(--font-action);
     font-size: 1rem;
-    width: 9rem;
-    height: 3rem;
     background: #7F00FF;  
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
     background: linear-gradient(to right, #E100FF, #7F00FF);
     border-radius: .5rem;
     box-shadow: 0 .2rem 1rem rgba(0, 0, 0,.4);
+
+}
+
+.card-info button{
+    width: 9rem;
+    height: 3rem;
 }
 
 .card:hover .card-info{
@@ -438,4 +443,98 @@ transition: all 2s;
 .card:hover .card-img-whapper{
     opacity: 0.4;
     background-color: gray;
+}
+.sessao-register{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(61, 109, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.register-whapper {
+width: 60%;
+height: 30rem;
+display: flex;
+box-shadow: 0.2rem .3rem  rgb(202, 146, 193, 0.5) ;
+
+}
+
+
+.register-left{
+    width: 100%;
+    background:url("Img/VVVtune.jpg");
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+.register-right{
+    width: 19%;
+    height: 30rem;
+    position: absolute;
+    top: 331.5%;
+    right: 20%;
+    background:white;
+    padding: 1rem 7rem 7rem 5rem 5rem;
+}
+.sessao-register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+    
+.sessao-register h1{
+    font-family: var(--font-action);
+     font-size: 2.0rem;
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group textarea{
+    max-width: 10rem;
+    max-height: 5rem;
+}
+
+
+.field{
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--font-secundary);
+    border-bottom: double 1px;
+    height: 1.5rem;
+    outline: none;
+    margin-bottom: 3.5rem;
+
+}
+.field-label {
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    transition: 1s;
+
+
+}
+
+.field:focus ~ label{
+    top:-1.5rem
+}
+ 
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn-submit {
+    font-size: 1.2rem;
+    width: 80%;
+    height: 2.5rem;
 }
