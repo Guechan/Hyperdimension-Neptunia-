@@ -16,6 +16,9 @@ list-style: none ;
 --font-action:"Kaushan Script",serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 .pudding img{
@@ -593,4 +596,51 @@ box-shadow: 0.2rem .3rem  rgb(202, 146, 193, 0.5) ;
     padding:1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(153, 223, 245);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer p{
+    font-family: var(--font-secundary);
+    color: rgb(92, 116, 182);
+    font-size: 1.5rem;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+footer a{
+    margin:0.2;
+    color: rgb(240, 243, 245);
+    font-size: 1.5rem;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#link-top {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    font-size:1.5rem;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: rgb(92, 116, 182) ;
+    color: white;
 }
